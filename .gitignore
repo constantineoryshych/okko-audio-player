@@ -1,0 +1,9 @@
+/.idea/*
+*.iml
+
+/node_modules/*
+/static/app/*
+/static/public/*
+
+npm-debug.json
+package-lock.json

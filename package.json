@@ -1,0 +1,56 @@
+{
+  "name": "okko-player",
+  "version": "0.0.6-alpha",
+  "description": "Audio Player for GP Project with hourly playlists",
+  "main": "static/app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV='\"development\"' webpack-dev-server --config ./webpack.dev.config.js --hot --watch --inline",
+    "prod": "cross-env NODE_ENV='\"production\"' webpack --define NODE_ENV='\"production\"' --config ./webpack.prod.config.js",
+    "start:dev": "cross-env NODE_ENV='\"development\"' babel-node static/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constantineoryshych/okko-audio-player.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constantineoryshych/okko-audio-player/issues"
+  },
+  "homepage": "https://github.com/constantineoryshych/okko-audio-player#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.3.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-bbt": "0.0.6",
+    "copy-webpack-plugin": "^4.4.1",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.17.0",
+    "eslint-config-bbt": "^1.0.1",
+    "eslint-config-bbt-react": "0.0.2",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "ip": "^1.1.5",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.10.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "emmett": "^3.1.1",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

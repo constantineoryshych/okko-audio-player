@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["bbt", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      },
+      "react": true
+    }]
+  ]
+}
